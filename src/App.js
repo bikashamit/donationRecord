@@ -34,7 +34,7 @@ const App = () => {
         accessor: 'name',
       },
       {
-        Header: 'Father Name',
+        Header: "Father's Name/Husband's Name",
         accessor: 'fathername',
       },
       {
@@ -63,6 +63,11 @@ const App = () => {
 
   return (
     <div className="App">
+    <div> durga mantra
+    </div>
+    <div>no donation is more and less
+    </div>
+    <div>gupt daan maha daan</div>
       <div className="filter-container">
         <input
           className="filter-input"
