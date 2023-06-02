@@ -63,9 +63,11 @@ const App = () => {
 
   return (
     <div className="App">
-    <div> durga mantra
+    <div> 
+    या देवी सर्वभूतेषु विष्णुमायेति शब्दिता |
+    नमस्तस्यै नमस्तस्यै नमस्तस्यै नमो नमः॥
     </div>
-    <div>no donation is more and less
+    <div>No donation is more and less
     </div>
     <div>gupt daan maha daan</div>
       <div className="filter-container">
