@@ -25,6 +25,9 @@ const App = () => {
       {
         Header: 'Serial No.',
         accessor: (row, index) => index + 1,
+        disableSortBy: true,
+        id: 'serialNo',
+        Cell: ({ value }) => <span className="mobile-serial-no">{value}</span>,
       },
       {
         Header: 'Name',
@@ -60,7 +63,6 @@ const App = () => {
 
   return (
     <div className="App">
-    <div>some text goes here</div>
       <div className="filter-container">
         <input
           className="filter-input"
@@ -69,43 +71,49 @@ const App = () => {
           placeholder="Search..."
         />
       </div>
-      <table {...getTableProps()} className="mobile-table">
-        <thead>
-          {headerGroups.map((headerGroup) => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map((column) => (
-                <th
-                  {...column.getHeaderProps(column.getSortByToggleProps())}
-                  className={
-                    column.isSorted
-                      ? column.isSortedDesc
-                        ? 'sort-desc'
-                        : 'sort-asc'
-                      : ''
-                  }
-                >
-                  {column.render('Header')}
-                </th>
-              ))}
-            </tr>
-          ))}
-        </thead>
-        <tbody {...getTableBodyProps()}>
-          {rows.map((row, i) => {
-            prepareRow(row);
-            return (
-              <tr
-                {...row.getRowProps()}
-                style={{ backgroundColor: i % 2 === 0 ? '#fff' : '#f0f0f0' }}
-              >
-                {row.cells.map((cell) => (
-                  <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+      <div className="table-container">
+        <table {...getTableProps()} className="mobile-table">
+          <thead>
+            {headerGroups.map((headerGroup) => (
+              <tr {...headerGroup.getHeaderGroupProps()}>
+                {headerGroup.headers.map((column) => (
+                  <th
+                    {...column.getHeaderProps(
+                      column.getSortByToggleProps()
+                    )}
+                    className={
+                      column.isSorted
+                        ? column.isSortedDesc
+                          ? 'sort-desc'
+                          : 'sort-asc'
+                        : ''
+                    }
+                  >
+                    {column.render('Header')}
+                  </th>
                 ))}
               </tr>
-            );
-          })}
-        </tbody>
-      </table>
+            ))}
+          </thead>
+          <tbody {...getTableBodyProps()}>
+            {rows.map((row, i) => {
+              prepareRow(row);
+              return (
+                <tr
+                  {...row.getRowProps()}
+                  style={{
+                    backgroundColor: i % 2 === 0 ? '#fff' : '#f0f0f0',
+                  }}
+                >
+                  {row.cells.map((cell, index) => (
+                    <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                  ))}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
