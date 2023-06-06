@@ -6,12 +6,16 @@ const App = () => {
   const data = React.useMemo(
     () => [
       //data here
-      { name: 'Shree Bhola Yadav',fathername: 'Late Shree Bhujhan yadav',address: 'Madhiya, Gangaur',donation: '1,25,555/-',},
+      { name: 'Shree Bhola Yadav',fathername: 'Late Rambujhawan yadav',address: 'Madhiya, Gangaur',donation: '1,25,555/-'},
+      { name: 'Shree Ramnandan Thakur',fathername: 'Late Maijan Thakur',address: 'Kamtaul, Gangaur',donation: '57,049/-'},
+      { name: 'Shree Dr Om Pandit',fathername: 'Shree Rameshwar pandit',address: 'Gangaur',donation: '55,555/-'},
+      { name: 'Shree Abhishek Kishore Yadav',fathername: 'Late Bajrangi Yadav',address: 'Pachgachhiya, Gangaur',donation: '51,055'},
+      { name: 'Moshmat Kumari Devi',fathername: 'Late shiv Prasad',address: 'Gangaur',donation: '36,925'},
+      { name: 'Moshmat Nayna Devi',fathername: 'Late Punyadeo Mishra',address: 'Ganagur',donation: '35,551/-'},
+      { name: 'Shree Lal Kishore Ram',fathername: 'Shree Amiri Ram',address: 'Madhiya, Ganagur',donation: '35,551/-'},
       { name: '',fathername: '',address: '',donation: '',},
       { name: '',fathername: '',address: '',donation: '',},
       { name: '',fathername: '',address: '',donation: '',},
-      { name: '',fathername: '',address: '',donation: '',},
-      
       // Add more data as needed
     ],
     []
