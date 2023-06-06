@@ -5,20 +5,36 @@
   padding: 2rem;
 }
 
+.filter-container {
+  margin-bottom: 1rem;
+}
+
+.filter-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
 .table-container {
   overflow-x: auto;
 }
 
 .mobile-table {
   width: 100%;
+  border-collapse: collapse;
 }
 
-.mobile-serial-no {
-  display: none;
+.table-row-white {
+  background-color: #ffffff;
+}
+
+.table-row-gray {
+  background-color: #f2f2f2;
 }
 
 @media (max-width: 768px) {
-  .mobile-serial-no {
+  .mobile-table thead th:first-child,
+  .mobile-table tbody td:first-child {
     display: table-cell;
   }
 }

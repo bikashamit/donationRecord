@@ -5,6 +5,19 @@ import './App.css';
 const App = () => {
   const data = React.useMemo(
     () => [
+      {
+        name: 'John Doe',
+        fathername: 'Michael Doe',
+        address: '123 Main St, City',
+        donation: '$100',
+      },
+      {
+        name: 'Jane Smith',
+        fathername: 'David Smith',
+        address: '456 Park Ave, Town',
+        donation: '$50',
+      },
+      // Add more data as needed
       { name: 'Shree Bhola Yadav',fathername: 'Late Rambujhawan yadav',address: 'Madhiya, Gangaur',donation: '1,25,555/-'},
       { name: 'Shree Ramnandan Thakur',fathername: 'Late Maijan Thakur',address: 'Kamtaul, Gangaur',donation: '57,049/-'},
       { name: 'Shree Dr Om Pandit',fathername: 'Shree Rameshwar pandit',address: 'Gangaur',donation: '55,555/-'},
@@ -15,8 +28,8 @@ const App = () => {
       { name: '',fathername: '',address: '',donation: '',},
       { name: '',fathername: '',address: '',donation: '',},
       { name: '',fathername: '',address: '',donation: '',},
-      // Add more data as needed
     ],
+    
     []
   );
 
@@ -24,12 +37,9 @@ const App = () => {
     () => [
       {
         Header: 'Serial No.',
-        accessor: (row, index) => index + 1,
-        disableSortBy: true,
         id: 'serialNo',
         Cell: ({ row }) => {
-          const { index } = row;
-          return <span className="mobile-serial-no">{index + 1}</span>;
+          return row.index + 1;
         },
       },
       {
@@ -99,10 +109,13 @@ const App = () => {
             ))}
           </thead>
           <tbody {...getTableBodyProps()}>
-            {rows.map((row) => {
+            {rows.map((row, index) => {
               prepareRow(row);
               return (
-                <tr {...row.getRowProps()}>
+                <tr
+                  {...row.getRowProps()}
+                  className={index % 2 === 0 ? 'table-row-white' : 'table-row-gray'}
+                >
                   {row.cells.map((cell) => (
                     <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
                   ))}
