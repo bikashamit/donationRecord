@@ -5,7 +5,6 @@ import './App.css';
 const App = () => {
   const data = React.useMemo(
     () => [
-      //data here
       { name: 'Shree Bhola Yadav',fathername: 'Late Rambujhawan yadav',address: 'Madhiya, Gangaur',donation: '1,25,555/-'},
       { name: 'Shree Ramnandan Thakur',fathername: 'Late Maijan Thakur',address: 'Kamtaul, Gangaur',donation: '57,049/-'},
       { name: 'Shree Dr Om Pandit',fathername: 'Shree Rameshwar pandit',address: 'Gangaur',donation: '55,555/-'},
@@ -32,7 +31,7 @@ const App = () => {
         accessor: 'name',
       },
       {
-        Header: "Father's Name/Husband's Name",
+        Header: 'Father Name',
         accessor: 'fathername',
       },
       {
@@ -60,9 +59,8 @@ const App = () => {
   const { globalFilter } = state;
 
   return (
-   
     <div className="App">
-    <div>Some Text Here</div>
+    <div>some text goes here</div>
       <div className="filter-container">
         <input
           className="filter-input"

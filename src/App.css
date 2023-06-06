@@ -5,30 +5,11 @@
   padding: 2rem;
 }
 
+.table-container {
+  overflow-x: auto;
+}
+
 .mobile-table {
   width: 100%;
-  border-collapse: collapse;
-}
-
-th,
-td {
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-}
-
-th {
-  font-weight: bold;
-}
-
-tr:nth-child(even) {
-  background-color: #f0f0f0;
-}
-
-.filter-container {
-  margin-bottom: 1rem;
-}
-
-.filter-input {
-  padding: 0.5rem;
-  width: 100%;
+ 
 }
