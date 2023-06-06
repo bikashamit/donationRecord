@@ -27,7 +27,10 @@ const App = () => {
         accessor: (row, index) => index + 1,
         disableSortBy: true,
         id: 'serialNo',
-        Cell: ({ value }) => <span className="mobile-serial-no">{value}</span>,
+        Cell: ({ row }) => {
+          const { index } = row;
+          return <span className="mobile-serial-no">{index + 1}</span>;
+        },
       },
       {
         Header: 'Name',
@@ -96,16 +99,11 @@ const App = () => {
             ))}
           </thead>
           <tbody {...getTableBodyProps()}>
-            {rows.map((row, i) => {
+            {rows.map((row) => {
               prepareRow(row);
               return (
-                <tr
-                  {...row.getRowProps()}
-                  style={{
-                    backgroundColor: i % 2 === 0 ? '#fff' : '#f0f0f0',
-                  }}
-                >
-                  {row.cells.map((cell, index) => (
+                <tr {...row.getRowProps()}>
+                  {row.cells.map((cell) => (
                     <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
                   ))}
                 </tr>

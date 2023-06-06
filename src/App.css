@@ -11,5 +11,14 @@
 
 .mobile-table {
   width: 100%;
- 
+}
+
+.mobile-serial-no {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-serial-no {
+    display: table-cell;
+  }
 }
