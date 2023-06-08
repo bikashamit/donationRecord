@@ -14,7 +14,7 @@ const App = () => {
       {id:7, name: 'Shree Lal Kishore Ram',fathername: 'Shree Amiri Ram',address: 'Madhiya, Ganagur',donation: '35,551/-'},
       {id:8,name: 'Shree Rajdeo sah',fathername: 'Late Fakira sah',address: 'Gangaur',donation: '25,555/-',},
       {id:9,name: 'Shree Sanjay Yadav',fathername: 'Late Yogendra Yadav',address: 'Madhiya,Gangaur',donation: '25,055/-',},
-      {id:10, name: 'Shree Ram Bahadur Mahto',fathername: 'Late Dilchan mahto',address: 'GanGaur',donation: '25,000/-',},
+      {id:10, name: 'Shree Ram Bahadur Mahto',fathername: 'Late Dilchan mahto',address: 'Gangaur',donation: '25,000/-',},
       {id:11, name: 'Shree Phudan Yadav',fathername: 'Late Matbar Yadav',address: 'Pachgachiya, Gangaur',donation: '25,000/-',},
       {id:12, name: 'Shree Suryadeo mahto',fathername: 'Late bhagwani mahto',address: 'Gopalpur, Gangaur',donation: '25,000/-',},
       {id:13, name: 'Shree Sitaram Yadav',fathername: 'Late Pachu Yadav',address: 'Pansalwa, Gangaur',donation: '21,000/-',},
@@ -168,7 +168,7 @@ const App = () => {
       {id:161, name: 'Moshmat Pukari Devi',fathername: 'Late Kunai Mishra',address: 'Gangaur',donation: '5,100/-',},
       {id:162, name: 'Shree Ramudar Mishra',fathername: 'Late Sone Mishra',address: 'Gangaur',donation: '5,101/-',},
       {id:163, name: 'Shree Rampavitra Mishra',fathername: 'Late Jagdeep Mishra',address: 'Gangaur',donation: '5,112/-',},
-      {id:164, name: 'Shree Ganga prasad Mishra',fathername: 'Late Ramvilash Mishra',address: 'gangaur',donation: '5,101/-',},
+      {id:164, name: 'Shree Ganga prasad Mishra',fathername: 'Late Ramvilash Mishra',address: 'Gangaur',donation: '5,101/-',},
       {id:165, name: 'Shree Umesh Sahu',fathername: 'Shree Jagganath sahu',address: 'Gangaur',donation: '5,051/-',},
       {id:166, name: 'Shree Ramsagar Mahto ',fathername: 'Late Bhikham Mahto',address: 'Gangaur',donation: '5,051/-',},
       {id:167, name: 'Shree Ramdev Mahto',fathername: 'Late Bhikham Mahto',address: 'Gangaur',donation: '5,051/-',},
@@ -195,7 +195,7 @@ const App = () => {
       {id:188, name: 'Shree Tapeshwar Yadav',fathername: 'Late Matwar yadav',address: 'Gangaur',donation: '5,101/-',},
       {id:189, name: 'Shree Mahendra Yadav',fathername: 'Late Gugai Yadav',address: 'Gangaur',donation: '5,100/-',},
       {id:190, name: 'Shree Vijay Sahu',fathername: 'Shree Ramsevak Sahu',address: 'Gangaur',donation: '5,101/-',},
-      {id:191, name: 'Shree Vinay Bihari Sharma',fathername: 'Late Bhola Sharma ',address: 'Gangaur',donation: '5,101',},
+      {id:191, name: 'Shree Vinay Bihari Sharma',fathername: 'Late Bhola Sharma ',address: 'Gangaur',donation: '5,101/-',},
       {id:192, name: 'Shree Rajnandan Mahto',fathername: 'Late Genai Mahto',address: 'Gangaur',donation: '5,100/-',},
       {id:193, name: 'Shree RamShresth Yadav',fathername: 'Late Deep Yadav',address: 'Madhiya, Gangaur',donation: '5,111/-',},
       {id:194, name: 'Shree Dileep sahu',fathername: 'Late Parikshan Sahu',address: 'Gangaur',donation: '5,051/-',},
@@ -325,6 +325,14 @@ const App = () => {
           })}
         </tbody>
       </table>
+      <div style={{
+        fontWeight: 'bold',
+        fontSize: '15px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: '20px' 
+      }}>अध्यक्ष : श्री भोला यादव </div>
     </div>
   );
 };
