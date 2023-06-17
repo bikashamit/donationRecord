@@ -28,7 +28,7 @@ const App = () => {
       {id:21, name: 'Shree Ganesh Yadav',fathername: 'Shree Rajeshwar Yadav',address: 'Pachgachhiya, Gangaur',donation: '15,551/-',},
       {id:22, name: 'Shree Lakshman Yadav',fathername: 'Late Ram Sudrist Yadav',address: 'Pansalwa, Gangaur ',donation: '15,151/-',},
       {id:23, name: 'Shree Surendra Prasad',fathername: 'Late Biptu Mahto',address: 'Gangaur',donation: '15,051/-',},
-      {id:24, name: 'Shree Ram Prabosh Sahu',fathername: 'Shree Bhadai Sahu',address: 'Gangaur',donation: '15,051/-',},
+      {id:24, name: 'Shree Ram Prabodh Sahu',fathername: 'Shree Bhadai Sahu',address: 'Gangaur',donation: '15,051/-',},
       {id:25, name: 'Shree Govind kumar',fathername: 'Tholai Yadav',address: 'Gangaur',donation: '15,051/-',},
       {id:26, name: 'Shree Ram Dayal Mishra',fathername: 'Late Parau Mishra',address: 'Gangaur',donation: '15,051/-',},
       {id:27, name: 'Shree Rakesh Kumar',fathername: 'Shree Sonelal Yadav',address: 'Gangaur',donation: '13,000/-',},
