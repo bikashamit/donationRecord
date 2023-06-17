@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/donationRecord/static/css/main.584016ad.css",
-    "main.js": "/donationRecord/static/js/main.805f59cd.js",
+    "main.js": "/donationRecord/static/js/main.8494c1c8.js",
     "static/js/787.fa1902df.chunk.js": "/donationRecord/static/js/787.fa1902df.chunk.js",
     "index.html": "/donationRecord/index.html",
     "main.584016ad.css.map": "/donationRecord/static/css/main.584016ad.css.map",
-    "main.805f59cd.js.map": "/donationRecord/static/js/main.805f59cd.js.map",
+    "main.8494c1c8.js.map": "/donationRecord/static/js/main.8494c1c8.js.map",
     "787.fa1902df.chunk.js.map": "/donationRecord/static/js/787.fa1902df.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.584016ad.css",
-    "static/js/main.805f59cd.js"
+    "static/js/main.8494c1c8.js"
   ]
 }
